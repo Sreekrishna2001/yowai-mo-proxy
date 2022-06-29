@@ -2,7 +2,7 @@ var http = require('http');
 var url = require('url');
 var request = require('request');
 
-http.createServer(onRequest).listen(5000);
+http.createServer(onRequest).listen(process.env.PORT||3000);
 
 function onRequest(req, res) {
 
